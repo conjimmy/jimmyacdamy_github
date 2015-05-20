@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">
+<TableRow>
+<Button
+    android:id="@+id/bnSend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Send" />
+</TableRow>
+<!-- 输入time的行 -->
+<TableRow>
+<TextView
+  
+	android:text="when:"
+	android:id="@+id/TextView"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+
+<EditText
+    android:hint="2015-09-13 12:00:00" 
+    android:id="@+id/edDate"
+    android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+>
+</EditText>
+
+<Button
+    android:id="@+id/btDate"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="set time"
+ />
+
+</TableRow>
+<!-- 输入place的行 -->
+<TableRow>
+<TextView
+  
+	android:text="place:"
+	android:id="@+id/TextView"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+
+<EditText
+    android:hint="2024 Binford ,Apt 1033 Laramie,Wyoming" 
+    android:id="@+id/edPlace"
+    android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+>
+</EditText>
+
+
+</TableRow>
+<!-- 输入topic -->
+<TableRow >
+<TextView
+	android:text="Content"
+	android:id="@+id/tvContent"
+	android:textSize="@dimen/label_font_size"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
+
+
+
+<EditText
+    android:id="@+id/edContent"
+ android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:hint="Topic">
+        </EditText>
+    
+
+</TableRow>
+<!-- 定义camera -->
+
+<Button
+    android:id="@+id/bnCamera"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="take pic" />
+
+
+   <ImageView 
+  android:id="@+id/imv_camera"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+
+   />
+
+
+
+</TableLayout>
